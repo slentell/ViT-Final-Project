@@ -19,6 +19,10 @@
     />
   </head>
     <body>
+        <div id = "scoreboard">
+        <h2 id="score">SCORE</h2>
+        <h2 id="prize" ></h2>
+      </div>
     <div class="container">
       <div class="col">
         <div id="game">
@@ -55,7 +59,7 @@
       <div class="col">
         <div id="game">
           <h3>JEOPARDY!</h3>
-          <br />
+          <br>
           <h1>MORE HTML</h1>
         </div>
         <div class="clue">
@@ -223,9 +227,12 @@
           <input id="c" name="answer" value="c" type="radio"></input>
             <label id="c1" class="choice"for="c"></label><br>
         </form>
-        <button id="checkAnswer" onclick="checkAnswer(event)">Check</button>
+        <br>
+        <div id="check"><button id="checkAnswer" onclick="checkAnswer(event)">Check</button></div>
+        <br>
         <div id="answerContent"></div>
         <div><h6 id="clueId"></h6></div>
+        <audio id="think" src="jeopardy-themelq.mp3"></audio>
       </div>
               
       </div>

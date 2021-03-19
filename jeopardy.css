@@ -1,27 +1,27 @@
 body {
   background-color: black;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-height: 80vh;
 }
 .container {
   display: flex;
 }
 
 .col {
-  display: grid;
   flex-direction: column;
   justify-content: space-between;
-  height: 50vh;
+  height: 80vh;
   width: 16.5%;
+  margin: 0 auto;
 }
 
 .clue,
 #game {
   background-color: #060ce9;
-  height: 125px;
+  height: 112px;
   width: 247px;
   text-align: center;
-  border: solid 3.2px lightgrey;
+  border: solid 3.2px darkgrey;
 }
 
 #game {
@@ -37,28 +37,27 @@ h2 {
 }
 h1 {
   margin-top: 5%;
-  font-size: 46px;
+  font-size: 45px;
 }
 .open-button {
   cursor: pointer;
   background-color: #060ce9;
   color: white;
   border: none;
-  height: 125px;
+  height: 112px;
   width: 247px;
   visibility: visible;
 }
-#myModal,
-#youWin {
+#myModal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #0645e9;
   border: solid 5px white;
-  width: 500px;
+  width: 550px;
   max-width: 60%;
-  height: 500px;
+  height: 550px;
   max-height: 60%;
   visibility: hidden;
 }
@@ -74,18 +73,35 @@ h1 {
   font-size: 40px;
 }
 
+#answerContent {
+  font-size: 30px;
+}
 label {
   font-family: "Libre Baskerville", serif;
   font-size: 20px;
 }
-#checkAnswer {
-  display: flex;
-  align-items: center;
-}
+
 #answerContent {
   visibility: hidden;
 }
 
 h6 {
   visibility: hidden;
+}
+#scoreboard {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 40px;
+}
+#score,
+#prize {
+  color: white;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 38px;
+}
+
+#check {
+  margin-left: 40%;
 }
